@@ -16,7 +16,7 @@ namespace count_vowels
             string input = Console.ReadLine().ToUpper();
             string vowels = "AEIOUYÅÄÖ";
             int count = 0;
-            for (int i=0; i<input.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
                 if (!(vowels.IndexOf(input.ElementAt(i)) < 0))
                 {

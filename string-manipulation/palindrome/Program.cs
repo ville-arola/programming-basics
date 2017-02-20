@@ -16,7 +16,7 @@ namespace palindrome
             Console.Write("Syötä merkkijono: ");
             string tmp, input = Console.ReadLine();
             tmp = Regex.Replace(input, @" ", "").ToLower();
-            int splitLen = (int) decimal.Ceiling((tmp.Length-1)/2)+1;
+            int splitLen = (int)decimal.Ceiling((tmp.Length - 1) / 2) + 1;
             string endHalfReversed = new string(tmp.Substring(splitLen).ToCharArray().Reverse().ToArray());
             if (tmp.StartsWith(endHalfReversed))
             {
